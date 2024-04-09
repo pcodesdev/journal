@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-logo {
+  padding-left: 1rem;
+  width: 40%;
+}
+
+.nav-links {
+  width: 60%;
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links li {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-links li:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #090909;
+}
+
+.header-content {
+  width: 100%;
+  background-image: url("assets/journal.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Corrected from 'left' to 'flex-start' */
+  justify-content: space-around;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.header-date {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header-paragraph {
+  font-size: 1.2rem;
+  /* font-weight: 300; */
+  font-weight: 400;
+}
+
+-----------------------
+  /* main
+  content */
+  --------------------------------
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-1,
+.blog-2,
+.blog-3 {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.main-content-image {
+  box-sizing: border-box;
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.main-content-date,
+.main-content-heading,
+.main-content-paragraph {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.main-content-more-blogs {
+  text-align: center;
+  /* margin: 0 auto; */
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: underline;
+  /* border-bottom: 2px solid #090909; */
+  /* display: inline-block; */
+}
+
+/* ......................... footer ....................................... */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #202020;
+  color: #d7d7d7;
+}
+
+.footer-container-heading {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.footer-container-paragraph {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: #ececec;
+}
+/* .footer-container-heading,
+.footer-container-paragraph {
+  margin: 1rem auto;
+  padding: 0;
+} */
