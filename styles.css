@@ -6,30 +6,31 @@ body {
 }
 
 .container {
-  width: 400px;
-  max-width: 100%;
+  max-width: 400px;
+  /* max-width: 100%; */
   margin: 0 auto;
 }
 
 .nav-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .nav-logo {
-  padding-left: 1rem;
-  width: 40%;
+  /* padding-left: 1rem; */
+  /* width: 40%; */
 }
 
 .nav-links {
-  width: 60%;
+  /* width: 60%; */
   display: flex;
+  flex-direction: row;
   text-transform: uppercase;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: center;
+  /* gap: 1rem; */
   list-style: none;
 }
 
@@ -39,14 +40,21 @@ body {
   font-weight: 500;
 }
 
+.nav-links a {
+  color: #090909;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
 .nav-links li:hover {
   cursor: pointer;
   border-bottom: 2px solid #090909;
 }
 
-.header-content {
+.header-content,
+.home-content,
+.about-content {
   width: 100%;
-  background-image: url("assets/journal.jpg");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -56,10 +64,48 @@ body {
   box-sizing: border-box;
 }
 
+.header-content {
+  background-image: url("assets/journal.jpg");
+}
+
+.home-content {
+  background-image: url("assets/home-header.jpg");
+}
+
+.sample-blog {
+  width: 90;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.sample-blog-img {
+  width: 100%;
+}
+
+.sample-blog-heading,
+.sample-blog-text {
+  text-align: left;
+}
+
+.recent-blog-posts {
+  text-align: center;
+}
+
+/* ........................... about me ................................... */
+
+.about-profile-img {
+  width: 40%;
+  border-radius: 50% 40% 50% 80%;
+}
+
 .header-date {
   text-align: center;
   font-size: 1rem;
   font-weight: 300;
+  margin: 0;
 }
 
 .header-title {
@@ -71,6 +117,7 @@ body {
   font-size: 1.2rem;
   /* font-weight: 300; */
   font-weight: 400;
+  margin: 0.5rem;
 }
 
 -----------------------
